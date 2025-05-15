@@ -1,0 +1,191 @@
+Flow report for Odev_1
+Thu May 15 14:38:30 2025
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Flow Summary                                                                    ;
++------------------------------------+--------------------------------------------+
+; Flow Status                        ; Successful - Thu May 15 14:38:30 2025      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; Odev_1                                     ;
+; Top-level Entity Name              ; Odev_1                                     ;
+; Family                             ; Cyclone III                                ;
+; Total logic elements               ; 5 / 5,136 ( < 1 % )                        ;
+;     Total combinational functions  ; 5 / 5,136 ( < 1 % )                        ;
+;     Dedicated logic registers      ; 1 / 5,136 ( < 1 % )                        ;
+; Total registers                    ; 1                                          ;
+; Total pins                         ; 14 / 183 ( 8 % )                           ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0 / 423,936 ( 0 % )                        ;
+; Embedded Multiplier 9-bit elements ; 0 / 46 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                              ;
+; Device                             ; EP3C5F256C6                                ;
+; Timing Models                      ; Final                                      ;
++------------------------------------+--------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 05/15/2025 14:38:15 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Odev_1              ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                  ;
++-------------------------------------+----------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                        ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+----------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 159327867615501.174730909512492              ; --            ; --          ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                           ; --            ; --          ; eda_simulation ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/altera/Projeler/Uygulama/simulation/qsim/ ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                  ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                    ; <None>        ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                                      ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_DECODE                                   ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_ADD_SUB                                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_ADD_SUB                                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_ADD_SUB                                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_ADD_SUB                                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_ADD_SUB                                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                                      ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_ADD_SUB                                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                                      ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                                      ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                                      ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX4x1.bsf                                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX4x1.cmp                                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; AC.bsf                                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; AC.cmp                                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; DR.bsf                                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; DR.cmp                                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; COUNTER.bsf                                  ; --            ; --          ; --             ;
+; MISC_FILE                           ; COUNTER.cmp                                  ; --            ; --          ; --             ;
+; MISC_FILE                           ; sayac.bsf                                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; sayac.cmp                                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; ADD1.bsf                                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; ADD1.cmp                                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; ADD_2.bsf                                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; ADD_2.cmp                                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; SUB1.bsf                                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; SUB1.cmp                                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; ADD_4.bsf                                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; ADD_4.cmp                                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; SUB2.bsf                                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; SUB2.cmp                                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; myMUX4x1.bsf                                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; myMUX4x1.cmp                                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; count1.bsf                                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; count1.cmp                                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; ADD_6.bsf                                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; ADD_6.cmp                                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX_6.bsf                                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX_6.cmp                                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; SELECTION.bsf                                ; --            ; --          ; --             ;
+; MISC_FILE                           ; SELECTION.cmp                                ; --            ; --          ; --             ;
+; MISC_FILE                           ; my4X1.bsf                                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; my4X1.cmp                                    ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                                     ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                        ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                       ; --            ; --          ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                 ; --            ; --          ; --             ;
++-------------------------------------+----------------------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4688 MB             ; 00:00:02                           ;
+; Fitter                    ; 00:00:04     ; 1.0                     ; 4929 MB             ; 00:00:04                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4585 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4614 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4536 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:10     ; --                      ; --                  ; 00:00:09                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-GADFCN2  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-GADFCN2  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-GADFCN2  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-GADFCN2  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-GADFCN2  ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Odev_1 -c Odev_1
+quartus_fit --read_settings_files=off --write_settings_files=off Odev_1 -c Odev_1
+quartus_asm --read_settings_files=off --write_settings_files=off Odev_1 -c Odev_1
+quartus_sta Odev_1 -c Odev_1
+quartus_eda --read_settings_files=off --write_settings_files=off Odev_1 -c Odev_1
+
+
+

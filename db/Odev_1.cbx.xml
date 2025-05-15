@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Odev_1">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst1|ADD_6:inst1|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_nki.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst2|myMUX4x1:inst10|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_c6e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst2|ADD_6:inst1|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_nki.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst3|myMUX4x1:inst10|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_c6e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst|MUX_6:inst2|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst|SUB1:inst6|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_foh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst1|MUX_6:inst2|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst1|SUB1:inst6|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_foh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst3|ADD_6:inst1|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_nki.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst|ADD_2:inst|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_96i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|AC:inst10|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_jbj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst1|ADD_2:inst|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_96i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst2|MUX_6:inst2|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst2|SUB1:inst6|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_foh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|lojik:inst14|my4X1:inst4|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_c6e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst2|ADD_2:inst|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_96i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst3|MUX_6:inst2|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst3|SUB1:inst6|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_foh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst|SUB2:inst8|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_foh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|count1:inst13|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_0oh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|lojik:inst15|my4X1:inst4|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_c6e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst1|SUB2:inst8|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_foh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst3|ADD_2:inst|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_96i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|DR:inst9|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_jbj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|lojik:inst16|my4X1:inst4|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_c6e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst2|SUB2:inst8|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_foh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst|myMUX4x1:inst10|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_c6e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|COUNTER:inst8|lpm_decode:LPM_DECODE_component" CBX_FILE_NAME="decode_5af.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|SELECTION:inst6|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_d6e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|lojik:inst17|my4X1:inst4|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_c6e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst1|myMUX4x1:inst10|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_c6e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst3|SUB2:inst8|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_foh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Odev_1|Aritmetic:inst|ADD_6:inst1|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_nki.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

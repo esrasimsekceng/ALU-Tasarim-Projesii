@@ -1,0 +1,227 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "05/11/2024 18:53:05"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    Odev_1
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module Odev_1_vlg_sample_tst(
+	AC,
+	DR,
+	S,
+	sampler_tx
+);
+input  AC;
+input  DR;
+input [1:0] S;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(AC or DR or S)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module Odev_1_vlg_check_tst (
+	BUS_1,
+	sampler_rx
+);
+input  BUS_1;
+input sampler_rx;
+
+reg  BUS_1_expected;
+
+reg  BUS_1_prev;
+
+reg  BUS_1_expected_prev;
+
+reg  last_BUS_1_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:1] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 1'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	BUS_1_prev = BUS_1;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	BUS_1_expected_prev = BUS_1_expected;
+end
+
+
+
+// expected BUS_1
+initial
+begin
+	BUS_1_expected = 1'bX;
+end 
+// generate trigger
+always @(BUS_1_expected or BUS_1)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected BUS_1 = %b | ",BUS_1_expected_prev);
+	$display("| real BUS_1 = %b | ",BUS_1_prev);
+`endif
+	if (
+		( BUS_1_expected_prev !== 1'bx ) && ( BUS_1_prev !== BUS_1_expected_prev )
+		&& ((BUS_1_expected_prev !== last_BUS_1_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port BUS_1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", BUS_1_expected_prev);
+		$display ("     Real value = %b", BUS_1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_BUS_1_exp = BUS_1_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module Odev_1_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg AC;
+reg DR;
+reg [1:0] S;
+// wires                                               
+wire BUS_1;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+Odev_1 i1 (
+// port map - connection between master ports and signals/registers   
+	.AC(AC),
+	.BUS_1(BUS_1),
+	.DR(DR),
+	.S(S)
+);
+// S[ 1 ]
+initial
+begin
+	repeat(2)
+	begin
+		S[1] = 1'b0;
+		S[1] = #200000 1'b1;
+		# 200000;
+	end
+	S[1] = 1'b0;
+end 
+// S[ 0 ]
+always
+begin
+	S[0] = 1'b0;
+	S[0] = #100000 1'b1;
+	#100000;
+end 
+
+// AC
+initial
+begin
+	repeat(2)
+	begin
+		AC = 1'b0;
+		AC = #200000 1'b1;
+		# 200000;
+	end
+	AC = 1'b0;
+end 
+
+// DR
+initial
+begin
+	DR = 1'b0;
+	DR = #300000 1'b1;
+	DR = #300000 1'b0;
+	DR = #300000 1'b1;
+end 
+
+Odev_1_vlg_sample_tst tb_sample (
+	.AC(AC),
+	.DR(DR),
+	.S(S),
+	.sampler_tx(sampler)
+);
+
+Odev_1_vlg_check_tst tb_out(
+	.BUS_1(BUS_1),
+	.sampler_rx(sampler)
+);
+endmodule
+

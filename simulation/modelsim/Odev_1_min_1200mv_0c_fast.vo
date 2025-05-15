@@ -1,0 +1,145 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
+
+// DATE "05/11/2024 18:50:37"
+
+// 
+// Device: Altera EP3C5F256C6 Package FBGA256
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Odev_1 (
+	BUS_1,
+	AC,
+	DR,
+	S);
+output 	BUS_1;
+input 	AC;
+input 	DR;
+input 	[1:0] S;
+
+// Design Ports Information
+// BUS_1	=>  Location: PIN_P1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// DR	=>  Location: PIN_R4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// S[0]	=>  Location: PIN_R5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// S[1]	=>  Location: PIN_T2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// AC	=>  Location: PIN_P2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("Odev_1_min_1200mv_0c_v_fast.sdo");
+// synopsys translate_on
+
+wire \BUS_1~output_o ;
+wire \S[1]~input_o ;
+wire \AC~input_o ;
+wire \S[0]~input_o ;
+wire \DR~input_o ;
+wire \inst2|LPM_MUX_component|auto_generated|result_node[0]~0_combout ;
+
+
+// Location: IOOBUF_X0_Y4_N23
+cycloneiii_io_obuf \BUS_1~output (
+	.i(\inst2|LPM_MUX_component|auto_generated|result_node[0]~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BUS_1~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BUS_1~output .bus_hold = "false";
+defparam \BUS_1~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X3_Y0_N1
+cycloneiii_io_ibuf \S[1]~input (
+	.i(S[1]),
+	.ibar(gnd),
+	.o(\S[1]~input_o ));
+// synopsys translate_off
+defparam \S[1]~input .bus_hold = "false";
+defparam \S[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y4_N15
+cycloneiii_io_ibuf \AC~input (
+	.i(AC),
+	.ibar(gnd),
+	.o(\AC~input_o ));
+// synopsys translate_off
+defparam \AC~input .bus_hold = "false";
+defparam \AC~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X9_Y0_N8
+cycloneiii_io_ibuf \S[0]~input (
+	.i(S[0]),
+	.ibar(gnd),
+	.o(\S[0]~input_o ));
+// synopsys translate_off
+defparam \S[0]~input .bus_hold = "false";
+defparam \S[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X5_Y0_N22
+cycloneiii_io_ibuf \DR~input (
+	.i(DR),
+	.ibar(gnd),
+	.o(\DR~input_o ));
+// synopsys translate_off
+defparam \DR~input .bus_hold = "false";
+defparam \DR~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X4_Y3_N0
+cycloneiii_lcell_comb \inst2|LPM_MUX_component|auto_generated|result_node[0]~0 (
+// Equation(s):
+// \inst2|LPM_MUX_component|auto_generated|result_node[0]~0_combout  = (\S[1]~input_o  & (\AC~input_o  $ (((\S[0]~input_o ) # (\DR~input_o ))))) # (!\S[1]~input_o  & ((\AC~input_o  & ((\S[0]~input_o ) # (\DR~input_o ))) # (!\AC~input_o  & (\S[0]~input_o  & 
+// \DR~input_o ))))
+
+	.dataa(\S[1]~input_o ),
+	.datab(\AC~input_o ),
+	.datac(\S[0]~input_o ),
+	.datad(\DR~input_o ),
+	.cin(gnd),
+	.combout(\inst2|LPM_MUX_component|auto_generated|result_node[0]~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst2|LPM_MUX_component|auto_generated|result_node[0]~0 .lut_mask = 16'h7668;
+defparam \inst2|LPM_MUX_component|auto_generated|result_node[0]~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign BUS_1 = \BUS_1~output_o ;
+
+endmodule

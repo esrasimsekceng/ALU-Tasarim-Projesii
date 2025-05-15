@@ -1,0 +1,129 @@
+$comment
+	File created using the following command:
+		vcd file Odev_1.msim.vcd -direction
+$end
+$date
+	Sat May 11 18:53:07 2024
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module Odev_1_vlg_vec_tst $end
+$var reg 1 ! AC $end
+$var reg 1 " DR $end
+$var reg 2 # S [1:0] $end
+$var wire 1 $ BUS_1 $end
+$var wire 1 % sampler $end
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var tri1 1 ) devclrn $end
+$var tri1 1 * devpor $end
+$var tri1 1 + devoe $end
+$var wire 1 , BUS_1~output_o $end
+$var wire 1 - S[1]~input_o $end
+$var wire 1 . AC~input_o $end
+$var wire 1 / S[0]~input_o $end
+$var wire 1 0 DR~input_o $end
+$var wire 1 1 inst2|LPM_MUX_component|auto_generated|result_node[0]~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+b0 #
+0$
+x%
+0&
+1'
+x(
+1)
+1*
+1+
+0,
+0-
+0.
+0/
+00
+01
+$end
+#100000
+b1 #
+1/
+0%
+#200000
+b11 #
+1!
+b10 #
+0/
+1-
+1.
+1%
+11
+1,
+1$
+#300000
+1"
+b11 #
+10
+1/
+0%
+01
+0,
+0$
+#400000
+b1 #
+0!
+b0 #
+0/
+0-
+0.
+1%
+#500000
+b1 #
+1/
+0%
+11
+1,
+1$
+#600000
+0"
+b11 #
+1!
+b10 #
+00
+0/
+1-
+1.
+1%
+#700000
+b11 #
+1/
+0%
+01
+0,
+0$
+#800000
+b1 #
+0!
+b0 #
+0/
+0-
+0.
+1%
+#900000
+1"
+b1 #
+10
+1/
+0%
+11
+1,
+1$
+#1000000
